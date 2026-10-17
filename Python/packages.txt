@@ -1,0 +1,6 @@
+py4j
+pyarrow
+
+pandas
+pycountry
+babel
