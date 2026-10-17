@@ -1,0 +1,42 @@
+currency_name,currency_code,FX,PPP,multivariable,legacy_2022_2026,group,group_name
+Euro,EUR,50.99,42.99,61.99,58.99,TRUE,Europe
+Australian Dollar,AUD,89.95,80.95,83.95,87.95,FALSE,Individual
+Brazilian Real,BRL,329.99,149.99,184.99,162.00,FALSE,Individual
+British Pound,GBP,44.49,40.49,53.49,49.99,FALSE,Individual
+Canadian Dollar,CAD,81.99,66.99,71.99,77.99,FALSE,Individual
+Chilean Peso,CLP,54499,24499,32999,28500,FALSE,Individual
+Renminbi,CNY,422,216,200,198,FALSE,Individual
+Colombian Peso,COP,229999,79999,134999,130000,FALSE,Individual
+Costa Rican Colon,CRC,30000,19000,27000,23900,FALSE,Individual
+Hong Kong Dollar,HKD,467.00,333.00,336.00,365.00,FALSE,Individual
+Indian Rupee,INR,5399,1249,2499,2400,FALSE,Individual
+Indonesian Rupiah,IDR,999999,289999,469999,449999,FALSE,Individual
+Israeli new shekel,ILS,189.99,204.99,219.99,224.95,FALSE,Individual
+Japanese Yen,JPY,9400,6050,7350,6500,FALSE,Individual
+Kazakhstani Tenge,KZT,30500,8460,15400,14000,FALSE,Individual
+Kuwaiti Dinar,KWD,18.49,12.09,10.95,9.60,FALSE,Individual
+Malaysian Ringgit,MYR,244.99,82.99,129.99,133.00,FALSE,Individual
+Mexican Peso,MXN,1079.99,569.99,699.99,614.99,FALSE,Individual
+New Zealand Dollar,NZD,104.99,89.99,91.99,85.99,FALSE,Individual
+Norwegian Krone,NOK,605.00,535.00,720.00,670.00,FALSE,Individual
+Peruvian Sol,PEN,199.99,99.99,129.99,115.00,FALSE,Individual
+Philippine Peso,PHP,3549.00,1199.00,1649.00,1670.00,FALSE,Individual
+Polish Zloty,PLN,214.99,114.99,254.99,274.99,FALSE,Individual
+Qatari Riyal,QAR,219.99,134.99,136.99,119.99,FALSE,Individual
+Russian Ruble,RUB,4750,1550,2300,1900,FALSE,Individual
+Saudi Riyal,SAR,224.99,119.99,129.99,114.95,FALSE,Individual
+Singapore Dollar,SGD,76.99,47.99,54.99,49.00,FALSE,Individual
+South African Rand,ZAR,994.99,419.99,519.99,499.00,FALSE,Individual
+South Korean Won,KRW,86500,49000,61500,63000,FALSE,Individual
+Swiss Franc,CHF,47.49,57.49,52.49,65.99,FALSE,Individual
+New Taiwan Dollar,TWD,1890,842,1030,898,FALSE,Individual
+Thai Baht,THB,1899.00,625.00,1049.00,1100.00,FALSE,Individual
+United Arab Emirates Dirham,AED,219.99,139.99,174.99,155.00,FALSE,Individual
+Ukrainian Hryvnia,UAH,2550,645,1150,1125,FALSE,Individual
+Uruguayan Peso,UYU,2350,1510,1910,1700,FALSE,Individual
+Vietnamese Dong,VND,1575000,407000,743000,705000,FALSE,Individual
+U.S. Dollar,USD,59.99,59.99,59.99,59.99,TRUE,USA
+SASIA - U.S. Dollar,USD,59.99,12.75,28.25,19.99,TRUE,SASIA
+CIS - U.S. Dollar,USD,59.99,17.25,28.25,27.99,TRUE,CIS
+LATAM - U.S. Dollar,USD,59.99,13.25,28.25,26.99,TRUE,LATAM
+MENA - U.S. Dollar,USD,59.99,14.49,28.25,26.99,TRUE,MENA
