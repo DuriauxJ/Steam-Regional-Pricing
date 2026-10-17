@@ -1,0 +1,23 @@
+.DS_Store
+Thumbs.db
+Desktop.ini
+.vscode/
+.idea/
+*.log
+*.tmp
+*.temp
+__pycache__/
+*.py[cod]
+.env
+.env.*
+!.env.example
+
+
+
+.knimeLock
+.savedWithData
+internal/
+internalTables/
+port_*/
+Example Workflows/
+.metadata/
