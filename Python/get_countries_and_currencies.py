@@ -1,5 +1,6 @@
 import pycountry
 import pandas as pd
+import country_converter as coco
 from babel.numbers import get_territory_currencies
 
 def get_countries_and_currencies():
@@ -10,11 +11,9 @@ def get_countries_and_currencies():
         for country in pycountry.countries
     ])
     countries = countries[countries["country_name"] != "Antarctica"]
-    countries["currency_code"] = countries["iso2"].apply(lambda iso2: get_territory_currencies(iso2))
-    countries["currency_code"] = countries["currency_code"].str[0]
+    countries["currency_code_country"] = countries["iso2"].apply(lambda iso2: get_territory_currencies(iso2))
+    countries["currency_code_country"] = countries["currency_code_country"].str[0]
 
-    for column in ["country_name", "iso2", "iso3", "currency_code"]:
-        countries[column] = countries[column].astype("string")
+    countries["continent"] = coco.convert(names=countries["iso2"].tolist(),to="continent")
+
     return countries
-df = get_countries_and_currencies()
-print(df.info())

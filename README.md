@@ -1,2 +1,2 @@
 # Steam Regional Pricing
-WIP
+Comparison of the 3 new recommended regional pricing methodologies and the legacy one (2022-2026) on the videogame platform Steam, using KNIME with R and Python scripting to produce a CSV dataset with the aim to produce interactive dashboards in PowerBI and Tableau.

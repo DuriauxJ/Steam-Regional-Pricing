@@ -1,4 +1,4 @@
-currency_name,currency_code,FX,PPP,multivariable,legacy_2022_2026,group,group_name
+currency_name_steam_price,currency_code_steam_price,FX,PPP,multivariable,legacy_2022_2026,group,group_name
 Euro,EUR,50.99,42.99,61.99,58.99,TRUE,Europe
 Australian Dollar,AUD,89.95,80.95,83.95,87.95,FALSE,Individual
 Brazilian Real,BRL,329.99,149.99,184.99,162.00,FALSE,Individual
