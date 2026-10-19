@@ -2,7 +2,9 @@ py4j
 pyarrow
 
 pandas
+numpy
 pycountry
 babel
 country_converter
 wbgapi
+requests
