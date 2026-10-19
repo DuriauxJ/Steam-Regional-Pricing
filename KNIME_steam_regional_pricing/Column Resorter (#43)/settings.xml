@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config xmlns="http://www.knime.org/2008/09/XMLConfig" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.knime.org/2008/09/XMLConfig http://www.knime.org/XMLConfig_2008_09.xsd" key="settings.xml">
+    <entry key="node_file" type="xstring" value="settings.xml"/>
+    <config key="flow_stack"/>
+    <config key="internal_node_subsettings">
+        <entry key="memory_policy" type="xstring" value="CacheSmallInMemory"/>
+    </config>
+    <config key="model">
+        <config key="ColumnOrder">
+            <entry key="array-size" type="xint" value="47"/>
+            <entry key="0" type="xstring" value="country_name"/>
+            <entry key="1" type="xstring" value="iso2"/>
+            <entry key="2" type="xstring" value="iso3"/>
+            <entry key="3" type="xstring" value="total_population"/>
+            <entry key="4" type="xstring" value="continent"/>
+            <entry key="5" type="xstring" value="group"/>
+            <entry key="6" type="xstring" value="group_name"/>
+            <entry key="7" type="xstring" value="currency_code_country"/>
+            <entry key="8" type="xstring" value="currency_code_steam_price"/>
+            <entry key="9" type="xstring" value="currency_name_steam_price"/>
+            <entry key="10" type="xstring" value="exchange_rate_USD_currency_regional_price"/>
+            <entry key="11" type="xstring" value="FX_USD"/>
+            <entry key="12" type="xstring" value="PPP_USD"/>
+            <entry key="13" type="xstring" value="multivariable_USD"/>
+            <entry key="14" type="xstring" value="legacy_2022_2026_USD"/>
+            <entry key="15" type="xstring" value="FX_local"/>
+            <entry key="16" type="xstring" value="PPP_local"/>
+            <entry key="17" type="xstring" value="multivariable_local"/>
+            <entry key="18" type="xstring" value="legacy_2022_2026_local"/>
+            <entry key="19" type="xstring" value="FX_USD_affordability"/>
+            <entry key="20" type="xstring" value="PPP_USD_affordability"/>
+            <entry key="21" type="xstring" value="multivariable_USD_affordability"/>
+            <entry key="22" type="xstring" value="legacy_2022_2026_USD_affordability"/>
+            <entry key="23" type="xstring" value="FX_local_misalignement_from_theoretical_PPP_price"/>
+            <entry key="24" type="xstring" value="PPP_local_misalignement_from_theoretical_PPP_price"/>
+            <entry key="25" type="xstring" value="multivariable_local_misalignement_from_theoretical_PPP_price"/>
+            <entry key="26" type="xstring" value="legacy_2022_2026_local_misalignement_from_theoretical_PPP_price"/>
+            <entry key="27" type="xstring" value="PPP_rate_households"/>
+            <entry key="28" type="xstring" value="computed_PPP_price"/>
+            <entry key="29" type="xstring" value="GDP_USD"/>
+            <entry key="30" type="xstring" value="households_final_consumption_expenditure"/>
+            <entry key="31" type="xstring" value="gini_index"/>
+            <entry key="32" type="xstring" value="GNI_per_capita"/>
+            <entry key="33" type="xstring" value="net_national_income_per_capita"/>
+            <entry key="34" type="xstring" value="fixed_broadband_subscriptions_per_100"/>
+            <entry key="35" type="xstring" value="FX_Depreciation_12_months_USD"/>
+            <entry key="36" type="xstring" value="inflation_yearly"/>
+            <entry key="37" type="xstring" value="inflation_5_years_average"/>
+            <entry key="38" type="xstring" value="inflation_yearly_affordability"/>
+            <entry key="39" type="xstring" value="inflation_5_years_average_affordability"/>
+            <entry key="40" type="xstring" value="currency_code_country (Right)"/>
+            <entry key="41" type="xstring" value="currency_code_steam_price (Right)"/>
+            <entry key="42" type="xstring" value="&lt;any unknown new column&gt;"/>
+            <entry key="43" type="xstring" value="FX_local_misalignment_from_theoretical_PPP_price"/>
+            <entry key="44" type="xstring" value="PPP_local_misalignment_from_theoretical_PPP_price"/>
+            <entry key="45" type="xstring" value="multivariable_local_misalignment_from_theoretical_PPP_price"/>
+            <entry key="46" type="xstring" value="legacy_2022_2026_local_misalignment_from_theoretical_PPP_price"/>
+        </config>
+    </config>
+    <config key="variables"/>
+    <config key="nodeAnnotation">
+        <entry key="text" type="xstring" value="sort columns %%00010into categories"/>
+        <entry key="contentType" type="xstring" value="text/plain"/>
+        <entry key="bgcolor" type="xint" value="16777215"/>
+        <entry key="x-coordinate" type="xint" value="0"/>
+        <entry key="y-coordinate" type="xint" value="0"/>
+        <entry key="width" type="xint" value="0"/>
+        <entry key="height" type="xint" value="0"/>
+        <entry key="alignment" type="xstring" value="CENTER"/>
+        <entry key="borderSize" type="xint" value="0"/>
+        <entry key="borderColor" type="xint" value="0"/>
+        <entry key="defFontSize" type="xint" value="-1"/>
+        <entry key="annotation-version" type="xint" value="20230412"/>
+        <config key="styles"/>
+    </config>
+    <entry key="customDescription" type="xstring" isnull="true" value=""/>
+    <entry key="state" type="xstring" value="CONFIGURED"/>
+    <entry key="factory" type="xstring" value="org.knime.base.node.preproc.columnresorter.ColumnResorterNodeFactory"/>
+    <entry key="node-name" type="xstring" value="Column Resorter"/>
+    <entry key="node-bundle-name" type="xstring" value="KNIME Base Nodes"/>
+    <entry key="node-bundle-symbolic-name" type="xstring" value="org.knime.base"/>
+    <entry key="node-bundle-vendor" type="xstring" value="KNIME AG, Zurich, Switzerland"/>
+    <entry key="node-bundle-version" type="xstring" value="5.12.0.v202606261225"/>
+    <entry key="node-feature-name" type="xstring" value="KNIME Base nodes"/>
+    <entry key="node-feature-symbolic-name" type="xstring" value="org.knime.features.base.feature.group"/>
+    <entry key="node-feature-vendor" type="xstring" value="KNIME AG, Zurich, Switzerland"/>
+    <entry key="node-feature-version" type="xstring" value="5.12.0.v202606261225"/>
+    <config key="factory_settings"/>
+    <entry key="name" type="xstring" value="Column Resorter"/>
+    <entry key="hasContent" type="xboolean" value="false"/>
+    <entry key="isInactive" type="xboolean" value="false"/>
+    <config key="ports">
+        <config key="port_1">
+            <entry key="index" type="xint" value="1"/>
+            <entry key="port_dir_location" type="xstring" isnull="true" value=""/>
+        </config>
+    </config>
+    <config key="filestores">
+        <entry key="file_store_location" type="xstring" isnull="true" value=""/>
+        <entry key="file_store_id" type="xstring" isnull="true" value=""/>
+    </config>
+</config>

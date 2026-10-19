@@ -10,11 +10,11 @@
         <config key="matchingCriteria">
             <config key="0">
                 <config key="leftTableColumnV2">
-                    <entry key="regularChoice" type="xstring" value="iso3"/>
+                    <entry key="regularChoice" type="xstring" value="currency_code_country"/>
                     <entry key="specialChoice_Internals" type="xstring" isnull="true" value=""/>
                 </config>
                 <config key="rightTableColumnV2">
-                    <entry key="regularChoice" type="xstring" value="iso3"/>
+                    <entry key="regularChoice" type="xstring" value="currency_code_country"/>
                     <entry key="specialChoice_Internals" type="xstring" isnull="true" value=""/>
                 </config>
             </config>
@@ -81,7 +81,7 @@
             </config>
         </config>
         <entry key="mergeJoinColumns" type="xboolean" value="true"/>
-        <entry key="duplicateHandling" type="xstring" value="APPEND_SUFFIX"/>
+        <entry key="duplicateHandling" type="xstring" value="DO_NOT_EXECUTE"/>
         <entry key="suffix" type="xstring" value=" (Right)"/>
         <entry key="outputUnmatchedRowsToSeparatePorts" type="xboolean" value="true"/>
         <entry key="rowKeyFactory" type="xstring" value="SEQUENTIAL"/>
@@ -107,7 +107,7 @@
         <config key="styles"/>
     </config>
     <entry key="customDescription" type="xstring" isnull="true" value=""/>
-    <entry key="state" type="xstring" value="IDLE"/>
+    <entry key="state" type="xstring" value="EXECUTED"/>
     <entry key="factory" type="xstring" value="org.knime.base.node.preproc.joiner3.Joiner3NodeFactory"/>
     <entry key="node-name" type="xstring" value="Joiner"/>
     <entry key="node-bundle-name" type="xstring" value="KNIME Base Nodes"/>
@@ -120,24 +120,33 @@
     <entry key="node-feature-version" type="xstring" value="5.12.0.v202606261225"/>
     <config key="factory_settings"/>
     <entry key="name" type="xstring" value="Joiner"/>
-    <entry key="hasContent" type="xboolean" value="false"/>
+    <entry key="hasContent" type="xboolean" value="true"/>
     <entry key="isInactive" type="xboolean" value="false"/>
     <config key="ports">
         <config key="port_1">
             <entry key="index" type="xint" value="1"/>
-            <entry key="port_dir_location" type="xstring" isnull="true" value=""/>
+            <entry key="port_spec_class" type="xstring" value="org.knime.core.data.DataTableSpec"/>
+            <entry key="port_object_class" type="xstring" value="org.knime.core.node.BufferedDataTable"/>
+            <entry key="port_object_summary" type="xstring" value="Rows: 175, Cols: 38"/>
+            <entry key="port_dir_location" type="xstring" value="port_1"/>
         </config>
         <config key="port_2">
             <entry key="index" type="xint" value="2"/>
-            <entry key="port_dir_location" type="xstring" isnull="true" value=""/>
+            <entry key="port_spec_class" type="xstring" value="org.knime.core.data.DataTableSpec"/>
+            <entry key="port_object_class" type="xstring" value="org.knime.core.node.BufferedDataTable"/>
+            <entry key="port_object_summary" type="xstring" value="Rows: 0, Cols: 2"/>
+            <entry key="port_dir_location" type="xstring" value="port_2"/>
         </config>
         <config key="port_3">
             <entry key="index" type="xint" value="3"/>
-            <entry key="port_dir_location" type="xstring" isnull="true" value=""/>
+            <entry key="port_spec_class" type="xstring" value="org.knime.core.data.DataTableSpec"/>
+            <entry key="port_object_class" type="xstring" value="org.knime.core.node.BufferedDataTable"/>
+            <entry key="port_object_summary" type="xstring" value="Rows: 0, Cols: 37"/>
+            <entry key="port_dir_location" type="xstring" value="port_3"/>
         </config>
     </config>
     <config key="filestores">
         <entry key="file_store_location" type="xstring" isnull="true" value=""/>
-        <entry key="file_store_id" type="xstring" isnull="true" value=""/>
+        <entry key="file_store_id" type="xstring" value="885fdcca-fb52-4931-acd4-30f34eddaf38"/>
     </config>
 </config>

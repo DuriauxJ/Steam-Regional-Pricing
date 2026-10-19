@@ -7,7 +7,7 @@
     </config>
     <config key="model">
         <entry key="append_column" type="xboolean" value="false"/>
-        <entry key="replaced_column" type="xstring" value="_misalignement_from_theoretical_PPP_price"/>
+        <entry key="replaced_column" type="xstring" value="_misalignment_from_theoretical_PPP_price"/>
         <entry key="expression" type="xstring" value="($$CURRENT_COLUMN$$ - $computed_PPP_price$) / $computed_PPP_price$"/>
         <entry key="convert_to_int" type="xboolean" value="false"/>
         <config key="column_selection">
@@ -85,6 +85,6 @@
     </config>
     <config key="filestores">
         <entry key="file_store_location" type="xstring" isnull="true" value=""/>
-        <entry key="file_store_id" type="xstring" value="d5950084-3e08-4126-bdd7-bc0431e0fcb2"/>
+        <entry key="file_store_id" type="xstring" value="f263f07b-a2b4-4ebb-9b7c-778ab30245c6"/>
     </config>
 </config>

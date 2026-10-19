@@ -1,7 +1,7 @@
 import pandas as pd
 import requests
 
-def get_3months_average_conversion_rates(Data):
+def get_3months_average_exchange_rates(Data):
     steam_currency = (Data["currency_code_steam_price"])
     country_currency = (Data["currency_code_country"])
 

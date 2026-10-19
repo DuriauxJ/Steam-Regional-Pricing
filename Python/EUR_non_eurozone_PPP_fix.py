@@ -16,7 +16,6 @@ def EUR_non_eurozone_PPP_fix(df):
     rates = pd.DataFrame(response.json())
     rates["rate"] = pd.to_numeric(rates["rate"], errors="coerce")
     
-            # Average the daily rates for each local currency
     avg_rates = rates[rates["quote"].isin(currencies_to_fetch)].groupby("quote")["rate"].mean().to_dict()
 
     exchange_rates = currencies.map(avg_rates)

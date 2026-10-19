@@ -7,7 +7,7 @@
     </config>
     <config key="model">
         <entry key="python3_command" type="xstring" value=""/>
-        <entry key="script" type="xstring" value="import knime.scripting.io as knio%%00010import sys%%00010from pathlib import Path%%00010python_folder = (Path.cwd().parent / &quot;Python&quot;).resolve()%%00010if not python_folder.is_dir():%%00010    raise FileNotFoundError(f&quot;Python folder not found: {python_folder}&quot;)%%00010sys.path.insert(0, str(python_folder))%%00010%%00010from get_3months_average_conversion_rates import get_3months_average_conversion_rates%%00010%%00010df = knio.input_tables[0].to_pandas()%%00010df = get_3months_average_conversion_rates(df)%%00010%%00010for col in df.columns:%%00010    df[col] = df[col].astype(object)%%00010knio.output_tables[0] = knio.Table.from_pandas(df,row_ids=&quot;generate&quot;)"/>
+        <entry key="script" type="xstring" value="import knime.scripting.io as knio%%00010import sys%%00010from pathlib import Path%%00010python_folder = (Path.cwd().parent / &quot;Python&quot;).resolve()%%00010if not python_folder.is_dir():%%00010    raise FileNotFoundError(f&quot;Python folder not found: {python_folder}&quot;)%%00010sys.path.insert(0, str(python_folder))%%00010%%00010from get_3months_average_exchange_rates import get_3months_average_exchange_rates%%00010%%00010df = knio.input_tables[0].to_pandas()%%00010df = get_3months_average_exchange_rates(df)%%00010%%00010for col in df.columns:%%00010    df[col] = df[col].astype(object)%%00010knio.output_tables[0] = knio.Table.from_pandas(df,row_ids=&quot;generate&quot;)"/>
     </config>
     <config key="variables">
         <entry key="version" type="xstring" value="V_2019_09_13"/>
@@ -77,6 +77,6 @@
     </config>
     <config key="filestores">
         <entry key="file_store_location" type="xstring" isnull="true" value=""/>
-        <entry key="file_store_id" type="xstring" value="c6a5809e-2d89-4690-9e23-939ce87ec309"/>
+        <entry key="file_store_id" type="xstring" value="8118f9ad-221b-432d-b01b-b700a667a9f0"/>
     </config>
 </config>
