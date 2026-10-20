@@ -1,6 +1,7 @@
 py4j
 pyarrow
 
+country_converter
 pandas
 numpy
 pycountry

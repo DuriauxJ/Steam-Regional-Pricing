@@ -8,12 +8,117 @@
     <config key="model">
         <config key="renamings">
             <config key="0">
+                <entry key="oldName" type="xstring" value="FX_local"/>
+                <entry key="newName" type="xstring" value="price_steam_FX_local"/>
+            </config>
+            <config key="1">
+                <entry key="oldName" type="xstring" value="PPP_local"/>
+                <entry key="newName" type="xstring" value="price_steam_PPP_local"/>
+            </config>
+            <config key="2">
+                <entry key="oldName" type="xstring" value="multivariable_local"/>
+                <entry key="newName" type="xstring" value="price_steam_multivariable_local"/>
+            </config>
+            <config key="3">
+                <entry key="oldName" type="xstring" value="legacy_2022_2026_local"/>
+                <entry key="newName" type="xstring" value="price_steam_legacy_local"/>
+            </config>
+            <config key="4">
+                <entry key="oldName" type="xstring" value="FX_USD"/>
+                <entry key="newName" type="xstring" value="price_steam_FX_USD"/>
+            </config>
+            <config key="5">
+                <entry key="oldName" type="xstring" value="PPP_USD"/>
+                <entry key="newName" type="xstring" value="price_steam_PPP_USD"/>
+            </config>
+            <config key="6">
+                <entry key="oldName" type="xstring" value="multivariable_USD"/>
+                <entry key="newName" type="xstring" value="price_steam_multivariable_USD"/>
+            </config>
+            <config key="7">
+                <entry key="oldName" type="xstring" value="legacy_2022_2026_USD"/>
+                <entry key="newName" type="xstring" value="price_steam_legacy_USD"/>
+            </config>
+            <config key="8">
+                <entry key="oldName" type="xstring" value="FX_USD_affordability"/>
+                <entry key="newName" type="xstring" value="affordability_price_steam_FX"/>
+            </config>
+            <config key="9">
+                <entry key="oldName" type="xstring" value="PPP_USD_affordability"/>
+                <entry key="newName" type="xstring" value="affordability_price_steam_PPP"/>
+            </config>
+            <config key="10">
+                <entry key="oldName" type="xstring" value="multivariable_USD_affordability"/>
+                <entry key="newName" type="xstring" value="affordability_price_steam_multivariable"/>
+            </config>
+            <config key="11">
+                <entry key="oldName" type="xstring" value="legacy_2022_2026_USD_affordability"/>
+                <entry key="newName" type="xstring" value="affordability_price_steam_legacy"/>
+            </config>
+            <config key="12">
+                <entry key="oldName" type="xstring" value="computed_PPP_price"/>
+                <entry key="newName" type="xstring" value="theoretical_PPP_price_local"/>
+            </config>
+            <config key="13">
+                <entry key="oldName" type="xstring" value="FX_local_misalignment_from_theoretical_PPP_price"/>
+                <entry key="newName" type="xstring" value="misalignment_from_PPP_price_steam_FX"/>
+            </config>
+            <config key="14">
+                <entry key="oldName" type="xstring" value="PPP_local_misalignment_from_theoretical_PPP_price"/>
+                <entry key="newName" type="xstring" value="misalignment_from_PPP_price_steam_PPP"/>
+            </config>
+            <config key="15">
+                <entry key="oldName" type="xstring" value="multivariable_local_misalignment_from_theoretical_PPP_price"/>
+                <entry key="newName" type="xstring" value="misalignment_from_PPP_price_steam_multivariable"/>
+            </config>
+            <config key="16">
                 <entry key="oldName" type="xstring" value="legacy_2022_2026_local_misalignment_from_theoretical_PPP_price"/>
-                <entry key="newName" type="xstring" value="legacy_2022_2026_local_misalignment_from_theoretical_PPP_price"/>
+                <entry key="newName" type="xstring" value="misalignment_from_PPP_price_steam_legacy"/>
+            </config>
+            <config key="17">
+                <entry key="oldName" type="xstring" value="GDP_USD"/>
+                <entry key="newName" type="xstring" value="WB_GDP_USD"/>
+            </config>
+            <config key="18">
+                <entry key="oldName" type="xstring" value="households_final_consumption_expenditure"/>
+                <entry key="newName" type="xstring" value="WB_households_final_consumption_expenditure"/>
+            </config>
+            <config key="19">
+                <entry key="oldName" type="xstring" value="fixed_broadband_subscriptions_per_100"/>
+                <entry key="newName" type="xstring" value="WB_fixed_broadband_subscriptions_per_100"/>
+            </config>
+            <config key="20">
+                <entry key="oldName" type="xstring" value="gini_index"/>
+                <entry key="newName" type="xstring" value="WB_gini_index"/>
+            </config>
+            <config key="21">
+                <entry key="oldName" type="xstring" value="net_national_income_per_capita"/>
+                <entry key="newName" type="xstring" value="WB_net_national_income_per_capita"/>
+            </config>
+            <config key="22">
+                <entry key="oldName" type="xstring" value="GNI_per_capita"/>
+                <entry key="newName" type="xstring" value="WB_GNI_per_capita"/>
+            </config>
+            <config key="23">
+                <entry key="oldName" type="xstring" value="inflation_yearly"/>
+                <entry key="newName" type="xstring" value="IMF_inflation_yearly"/>
+            </config>
+            <config key="24">
+                <entry key="oldName" type="xstring" value="inflation_5_years_average"/>
+                <entry key="newName" type="xstring" value="IMF_inflation_5_years_average"/>
+            </config>
+            <config key="25">
+                <entry key="oldName" type="xstring" value="income_classification"/>
+                <entry key="newName" type="xstring" value="WB_income_classification"/>
+            </config>
+            <config key="26">
+                <entry key="oldName" type="xstring" value="total_population"/>
+                <entry key="newName" type="xstring" value="total_population"/>
             </config>
         </config>
         <entry key="doNotAllowPaddedColumnName_Internals" type="xboolean" value="true"/>
     </config>
+    <config key="variables"/>
     <config key="nodeAnnotation">
         <entry key="text" type="xstring" value="clean up %%00010column names"/>
         <entry key="contentType" type="xstring" value="text/plain"/>
@@ -30,7 +135,7 @@
         <config key="styles"/>
     </config>
     <entry key="customDescription" type="xstring" isnull="true" value=""/>
-    <entry key="state" type="xstring" value="CONFIGURED"/>
+    <entry key="state" type="xstring" value="EXECUTED"/>
     <entry key="factory" type="xstring" value="org.knime.base.node.preproc.column.renamer.ColumnRenamerNodeFactory"/>
     <entry key="node-name" type="xstring" value="Column Renamer"/>
     <entry key="node-bundle-name" type="xstring" value="KNIME Base Nodes"/>
@@ -43,16 +148,19 @@
     <entry key="node-feature-version" type="xstring" value="5.12.0.v202606261225"/>
     <config key="factory_settings"/>
     <entry key="name" type="xstring" value="Column Renamer"/>
-    <entry key="hasContent" type="xboolean" value="false"/>
+    <entry key="hasContent" type="xboolean" value="true"/>
     <entry key="isInactive" type="xboolean" value="false"/>
     <config key="ports">
         <config key="port_1">
             <entry key="index" type="xint" value="1"/>
-            <entry key="port_dir_location" type="xstring" isnull="true" value=""/>
+            <entry key="port_spec_class" type="xstring" value="org.knime.core.data.DataTableSpec"/>
+            <entry key="port_object_class" type="xstring" value="org.knime.core.node.BufferedDataTable"/>
+            <entry key="port_object_summary" type="xstring" value="Rows: 174, Cols: 39"/>
+            <entry key="port_dir_location" type="xstring" value="port_1"/>
         </config>
     </config>
     <config key="filestores">
         <entry key="file_store_location" type="xstring" isnull="true" value=""/>
-        <entry key="file_store_id" type="xstring" isnull="true" value=""/>
+        <entry key="file_store_id" type="xstring" value="d26e6f1a-1702-489c-9a7a-4ef1040dbb60"/>
     </config>
 </config>
