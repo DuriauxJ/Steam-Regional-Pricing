@@ -12,11 +12,11 @@
             <entry key="1" type="xstring" value="// $double column name$ &gt; 5.0 =&gt; &quot;large&quot;"/>
             <entry key="2" type="xstring" value="// $string column name$ LIKE &quot;*blue*&quot; =&gt; &quot;small and blue&quot;"/>
             <entry key="3" type="xstring" value="// TRUE =&gt; &quot;default outcome&quot;"/>
-            <entry key="4" type="xstring" value="$continent$ = &quot;Europe&quot; =&gt; &quot;Europe&quot;"/>
-            <entry key="5" type="xstring" value="$iso3$ IN (&quot;BGD&quot;, &quot;BTN&quot;, &quot;PAK&quot;,&quot;NPL&quot;,&quot;LKA&quot;) =&gt; &quot;SASIA&quot;"/>
-            <entry key="6" type="xstring" value="$iso3$ IN (&quot;AZE&quot;, &quot;ARM&quot;, &quot;BLR&quot;, &quot;BLR&quot;, &quot;GEO&quot;, &quot;BLR&quot;, &quot;KGZ&quot;, &quot;MDA&quot;,&quot;TJK&quot;,&quot;UZB&quot;) =&gt; &quot;CIS&quot;"/>
-            <entry key="7" type="xstring" value="$iso3$ IN (&quot;BLZ&quot;, &quot;SLV&quot;, &quot;GTM&quot;,&quot;HND&quot;,&quot;NIC&quot;,&quot;PAN&quot;,&quot;ARG&quot;,&quot;VEN&quot;,&quot;BOL&quot;,&quot;ECU&quot;,&quot;GUY&quot;,&quot;PRY&quot;,&quot;SUR&quot;) =&gt; &quot;LATAM&quot;"/>
-            <entry key="8" type="xstring" value="$iso3$ IN (&quot;BHR&quot;,&quot;EGY&quot;,&quot;IRQ&quot;,&quot;JOR&quot;,&quot;LBN&quot;,&quot;OMN&quot;,&quot;PSE&quot;,&quot;TUR&quot;,&quot;YEM&quot;,&quot;DZA&quot;,&quot;LBY&quot;,&quot;MAR&quot;,&quot;TUN&quot;,&quot;SDN&quot;) =&gt; &quot;MENA&quot;"/>
+            <entry key="4" type="xstring" value="$iso3$ IN (&quot;BGD&quot;, &quot;BTN&quot;, &quot;PAK&quot;,&quot;NPL&quot;,&quot;LKA&quot;) =&gt; &quot;SASIA&quot;"/>
+            <entry key="5" type="xstring" value="$iso3$ IN (&quot;AZE&quot;, &quot;ARM&quot;, &quot;BLR&quot;, &quot;BLR&quot;, &quot;GEO&quot;, &quot;BLR&quot;, &quot;KGZ&quot;, &quot;MDA&quot;,&quot;TJK&quot;,&quot;UZB&quot;) =&gt; &quot;CIS&quot;"/>
+            <entry key="6" type="xstring" value="$iso3$ IN (&quot;BLZ&quot;, &quot;SLV&quot;, &quot;GTM&quot;,&quot;HND&quot;,&quot;NIC&quot;,&quot;PAN&quot;,&quot;ARG&quot;,&quot;VEN&quot;,&quot;BOL&quot;,&quot;ECU&quot;,&quot;GUY&quot;,&quot;PRY&quot;,&quot;SUR&quot;) =&gt; &quot;LATAM&quot;"/>
+            <entry key="7" type="xstring" value="$iso3$ IN (&quot;BHR&quot;,&quot;EGY&quot;,&quot;IRQ&quot;,&quot;JOR&quot;,&quot;LBN&quot;,&quot;OMN&quot;,&quot;PSE&quot;,&quot;TUR&quot;,&quot;YEM&quot;,&quot;DZA&quot;,&quot;LBY&quot;,&quot;MAR&quot;,&quot;TUN&quot;,&quot;SDN&quot;) =&gt; &quot;MENA&quot;"/>
+            <entry key="8" type="xstring" value="$continent$ = &quot;Europe&quot; =&gt; &quot;Europe&quot;"/>
             <entry key="9" type="xstring" value="TRUE =&gt; &quot;USA&quot;"/>
         </config>
         <entry key="new-column-name" type="xstring" value="group_name"/>
@@ -66,6 +66,6 @@
     </config>
     <config key="filestores">
         <entry key="file_store_location" type="xstring" isnull="true" value=""/>
-        <entry key="file_store_id" type="xstring" value="a57e49ae-4af3-4457-ac45-2a7a2a7933b7"/>
+        <entry key="file_store_id" type="xstring" value="9b588def-b999-4459-851c-9396cd0414c4"/>
     </config>
 </config>
