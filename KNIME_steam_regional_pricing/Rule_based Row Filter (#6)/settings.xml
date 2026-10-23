@@ -7,7 +7,7 @@
     </config>
     <config key="model">
         <config key="rules">
-            <entry key="array-size" type="xint" value="8"/>
+            <entry key="array-size" type="xint" value="9"/>
             <entry key="0" type="xstring" value="// enter ordered set of rules, e.g.:"/>
             <entry key="1" type="xstring" value="// $double column name$ &gt; 5.0 =&gt; FALSE"/>
             <entry key="2" type="xstring" value="// $string column name$ LIKE &quot;*blue*&quot; =&gt; FALSE"/>
@@ -15,7 +15,8 @@
             <entry key="4" type="xstring" value="MISSING $total_population$ =&gt; FALSE"/>
             <entry key="5" type="xstring" value="$total_population$ &lt; 350000 =&gt; FALSE"/>
             <entry key="6" type="xstring" value="$iso3$ = &quot;PRK&quot; =&gt; FALSE"/>
-            <entry key="7" type="xstring" value="TRUE =&gt; TRUE"/>
+            <entry key="7" type="xstring" value="$iso3$ = &quot;PSE&quot; =&gt; FALSE"/>
+            <entry key="8" type="xstring" value="TRUE =&gt; TRUE"/>
         </config>
         <entry key="new-column-name" type="xstring" value=""/>
         <entry key="replace-column-name" type="xstring" value=""/>
@@ -63,12 +64,12 @@
             <entry key="index" type="xint" value="1"/>
             <entry key="port_spec_class" type="xstring" value="org.knime.core.data.DataTableSpec"/>
             <entry key="port_object_class" type="xstring" value="org.knime.core.node.BufferedDataTable"/>
-            <entry key="port_object_summary" type="xstring" value="Rows: 174, Cols: 6"/>
+            <entry key="port_object_summary" type="xstring" value="Rows: 173, Cols: 6"/>
             <entry key="port_dir_location" type="xstring" value="port_1"/>
         </config>
     </config>
     <config key="filestores">
         <entry key="file_store_location" type="xstring" isnull="true" value=""/>
-        <entry key="file_store_id" type="xstring" value="364dbfff-becc-4991-b624-64b04f0e725d"/>
+        <entry key="file_store_id" type="xstring" value="854da639-5564-4ca4-b0a7-a9947c513435"/>
     </config>
 </config>

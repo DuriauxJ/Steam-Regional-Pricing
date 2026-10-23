@@ -115,6 +115,10 @@
                 <entry key="oldName" type="xstring" value="total_population"/>
                 <entry key="newName" type="xstring" value="total_population"/>
             </config>
+            <config key="27">
+                <entry key="oldName" type="xstring" value="percent_using_internet"/>
+                <entry key="newName" type="xstring" value="WB_percent_using_internet"/>
+            </config>
         </config>
         <entry key="doNotAllowPaddedColumnName_Internals" type="xboolean" value="true"/>
     </config>
@@ -155,12 +159,12 @@
             <entry key="index" type="xint" value="1"/>
             <entry key="port_spec_class" type="xstring" value="org.knime.core.data.DataTableSpec"/>
             <entry key="port_object_class" type="xstring" value="org.knime.core.node.BufferedDataTable"/>
-            <entry key="port_object_summary" type="xstring" value="Rows: 174, Cols: 39"/>
+            <entry key="port_object_summary" type="xstring" value="Rows: 173, Cols: 40"/>
             <entry key="port_dir_location" type="xstring" value="port_1"/>
         </config>
     </config>
     <config key="filestores">
         <entry key="file_store_location" type="xstring" isnull="true" value=""/>
-        <entry key="file_store_id" type="xstring" value="9b17e1e5-75dc-40fa-888c-176dda90155b"/>
+        <entry key="file_store_id" type="xstring" value="11e61c1d-bc14-411f-b356-cae0709a4caf"/>
     </config>
 </config>

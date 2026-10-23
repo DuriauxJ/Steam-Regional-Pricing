@@ -4,7 +4,7 @@ Comparison of the 3 new recommended regional pricing methodologies and the legac
 ## steam_regional_pricing_dataset.csv 
 
 ### Overview & Scope
-The dataset contains **194 entries** covering global markets. Micro-states and territories with a population under 350,000 have been excluded to eliminate map rendering clutter and meaningless noise. Taiwan and North Korea have been excluded due to a lack of World Bank data.
+The dataset contains **173 entries** covering global markets. Micro-states and territories with a population under 350,000 have been excluded to eliminate map rendering clutter and meaningless noise. Taiwan, Palestine and North Korea have been excluded due to a lack of World Bank data.
 
 ---
 
@@ -39,6 +39,7 @@ The dataset contains **194 entries** covering global markets. Micro-states and t
 - `WB_gini_index` : World Bank Gini index measuring income inequality (scale 0 to 100) `(Source: wbgapi)`
 - `WB_net_national_income_per_capita` : Net national income per capita in USD `(Source: wbgapi)`
 - `WB_gni_per_capita` : Gross National Income per capita (Atlas method, USD) `(Source: wbgapi)`
+- `WB_percent_using_internet` : Proportion of individuals who used the Internet in the last three months (acting as a proxy for the addressable PC gaming market size) `(Source: wbgapi)`
 - `WB_fixed_broadband_subscriptions_per_100` : Fixed broadband subscriptions per 100 inhabitants (acting as a proxy for the addressable PC gaming market size) `(Source: wbgapi)`
 
 ##### Steam Recommended Regional Prices
