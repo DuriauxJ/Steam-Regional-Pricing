@@ -23,5 +23,5 @@ def get_world_bank_data(df):
 
     #remove very low quality datas
     df.loc[df["iso3"] == "HKG","net_national_income_per_capita"] = np.nan #data from 1980, too outdated
-    df.loc[df["iso3"] == "VEN","PPP_rate_households"] = np.nan #data from 2011, = 0
+    df.loc[df["iso3"].isin(["VEN","SSD","ARG","ZWE"]),"PPP_rate_households"] = np.nan #outdated PPP rates
     return df

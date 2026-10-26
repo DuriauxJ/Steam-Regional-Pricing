@@ -16,4 +16,5 @@ def get_countries_and_currencies():
 
     countries["continent"] = coco.convert(names=countries["iso2"].tolist(),to="continent")
 
+    countries.loc[countries["iso3"] == "LBR","currency_code_country"] = "USD"
     return countries
