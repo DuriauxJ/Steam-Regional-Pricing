@@ -1,5 +1,47 @@
-# Steam Regional Pricing
-Comparison of the 3 new recommended regional pricing methodologies and the legacy one (2022-2026) on the videogame platform Steam, using KNIME with Python scripting to produce a CSV dataset with the aim to produce interactive dashboards in PowerBI and Tableau.
+# Steam Regional Pricing: Global Economic Alignment & Methodological Evolution
+
+[![KNIME Workflow](https://img.shields.io/badge/KNIME-Automated%20Pipeline-orange?style=flat-square&logo=knime)](https://www.knime.com)
+[![PowerBI Dashboard](https://img.shields.io/badge/PowerBI-Interactive%20Explorer-yellow?style=flat-square&logo=powerbi)](https://powerbi.microsoft.com)
+[![Python](https://img.shields.io/badge/Python-Data%20Engineering-blue?style=flat-square&logo=python)](https://www.python.org)
+[![R](https://img.shields.io/badge/R-Statistical%20Modeling-276DC3?style=flat-square&logo=r)](https://www.r-project.org)
+
+An automated, end-to-end data engineering and economic analysis pipeline evaluating how the digital video game distribution platform **Steam** applies regional pricing across global markets relative to underlying economic realities.
+
+This project evolves a university research essay (Grade: 6.0 / 6) into a reproducible data pipeline built with **KNIME**, **Python**, **R**, and visualized via interactive **PowerBI** and **Tableau** dashboards.
+
+---
+
+## 📁 Repository Architecture
+<pre>
+📦 Steam-Regional-Pricing/\
+├── 📁 data/                            # Raw inputs & final master dataset (steam_regional_pricing_dataset.csv)
+├── 📁 KNIME_steam_regional_pricing/    # KNIME workflow
+├── 📁 python/                          # Python scripts embedded within KNIME nodes
+├── 📁 dashboards/                      # PowerBI templates (.pbix) and Tableau workbook files
+├── 📁 legacy/                          # Previous university R script and report
+├── 📁 assets/                          # Images for documentation
+└── 📄 README.md                        # Project overview, methodology, and data dictionary
+</pre>
+
+## ⚙️ Data Engineering Pipeline (KNIME & Scripts)
+
+The pipeline is structured into 8 modular blocks inside KNIME, executing data ingestion, currency normalization, macroeconomic enrichment, and feature engineering automatically:
+
+- **Ingestion**: Imports raw country lists and Steam recommended prices via CSV readers and Python API wrappers.
+
+- **Filtering**: Gets population data from the World Bank API and filters out territories with a population under 350,000 , alongside Taiwan, Palestine, and North Korea due to incomplete World Bank reporting.
+
+- **Joins**: Dynamically joins countries with individual and grouped regional prices.
+
+- **Currency Conversions**: Computes 90-day trailing average exchange rates to resolve missing local orUSD price.
+
+- **Macroeconomic Enrichment**: Import World Bank (wbgapi) and IMF indicators.
+
+- **Depreciation**: Computes 12-month trailing local currency depreciation against the USD.
+
+- **Feature Engineering**: Calculates theoretical PPP baselines, price-to-income affordability ratios, and percentage misalignments from PPP.
+
+- **Export**: Resorts, rename columns, and exports a CSV dataset.
 
 ## steam_regional_pricing_dataset.csv 
 
@@ -27,13 +69,13 @@ The dataset contains **173 entries** covering global markets. Micro-states and t
 - `currency_name_steam_price` : Full display name of the Steam pricing currency
 - `exchange_rate_USD_currency_regional_price` : 3-month trailing average exchange rate between USD and the Steam pricing currency `(Source: frankfurter API)`
 - `PPP_rate_households` : World Bank household final consumption purchasing power parity conversion factor `(Source: wbgapi)`
-- `theoretical_PPP_price_local` : Theoretical local price baseline adjusted for purchasing power parity (relative to a standard $59.99 USD baseline)
+- `theoretical_PPP_price_local` : Theoretical local price baseline adjusted for purchasing power parity
 - `FX_Depreciation_12_months_USD` : 12-month trailing depreciation rate of the local currency against the USD `(Source: frankfurter API)`
 - `IMF_inflation_yearly` : Current year annual inflation rate `(Source: IMF)`
 - `IMF_inflation_5_years_average` : 5-year historical average inflation rate `(Source: IMF)`
 
 ##### World Bank Data
-- `total_population` : Total resident population count
+- `total_population` : Total resident population count `(Source: wbgapi)`
 - `WB_gdp_usd` : Gross Domestic Product in current USD `(Source: wbgapi)`
 - `WB_households_final_consumption_expenditure` : Total household final consumption expenditure (USD) `(Source: wbgapi)`
 - `WB_gini_index` : World Bank Gini index measuring income inequality (scale 0 to 100) `(Source: wbgapi)`
