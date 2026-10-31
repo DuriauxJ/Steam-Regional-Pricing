@@ -1,0 +1,237 @@
+
+{
+  "name": "Steam Regional Pricing - Dark",
+  "dataColors": [
+    "#38B6FF",
+    "#0078D4",
+    "#75DDF5",
+    "#00B8A9",
+    "#A4D007",
+    "#A78BFA",
+    "#F0A44B",
+    "#E56B6F",
+    "#B7C5D3",
+    "#FFFFFF"
+  ],
+  "background": "#171A21",
+  "foreground": "#F1F5F9",
+  "tableAccent": "#38B6FF",
+  "visualStyles": {
+    "*": {
+      "*": {
+        "background": [
+          {
+            "color": {
+              "solid": {
+                "color": "#1B2838"
+              }
+            },
+            "transparency": 0
+          }
+        ],
+        "title": [
+          {
+            "fontColor": {
+              "solid": {
+                "color": "#66C0F4"
+              }
+            }
+          }
+        ],
+        "labels": [
+          {
+            "color": {
+              "solid": {
+                "color": "#F1F5F9"
+              }
+            }
+          }
+        ],
+        "categoryAxis": [
+          {
+            "labelColor": {
+              "solid": {
+                "color": "#E6EDF5"
+              }
+            },
+            "titleColor": {
+              "solid": {
+                "color": "#FFFFFF"
+              }
+            },
+            "gridlineColor": {
+              "solid": {
+                "color": "#8F98A0"
+              }
+            },
+            "gridlineShow": true,
+            "gridlineThickness": 1
+          }
+        ],
+        "valueAxis": [
+          {
+            "labelColor": {
+              "solid": {
+                "color": "#E6EDF5"
+              }
+            },
+            "titleColor": {
+              "solid": {
+                "color": "#FFFFFF"
+              }
+            },
+            "gridlineColor": {
+              "solid": {
+                "color": "#8F98A0"
+              }
+            },
+            "gridlineShow": true,
+            "gridlineThickness": 1
+          }
+        ],
+        "legend": [
+          {
+            "labelColor": {
+              "solid": {
+                "color": "#FFFFFF"
+              }
+            },
+            "titleColor": {
+              "solid": {
+                "color": "#FFFFFF"
+              }
+            }
+          }
+        ],
+        "border": [
+          {
+            "show": true,
+            "color": {
+              "solid": {
+                "color": "#35516B"
+              }
+            }
+          }
+        ]
+      }
+    },
+    "advancedSlicerVisual": {
+    "*": {
+      "fillCustom": [
+        {
+          "$id": "default",
+          "fillColor": {
+            "solid": {
+              "color": "#1B2838"
+            }
+          },
+          "transparency": 0
+        },
+        {
+          "$id": "selection:selected",
+          "fillColor": {
+            "solid": {
+              "color": "#1A9FFF"
+            }
+          },
+          "transparency": 0
+        },
+        {
+          "$id": "interaction:hover",
+          "fillColor": {
+            "solid": {
+              "color": "#2A475E"
+            }
+          },
+          "transparency": 0
+        },
+        {
+          "$id": "interaction:press",
+          "fillColor": {
+            "solid": {
+              "color": "#66C0F4"
+            }
+          },
+          "transparency": 0
+        }
+      ],
+      "value": [
+        {
+          "$id": "default",
+          "fontColor": {
+            "solid": {
+              "color": "#F1F5F9"
+            }
+          }
+        },
+        {
+          "$id": "selection:selected",
+          "fontColor": {
+            "solid": {
+              "color": "#FFFFFF"
+            }
+          }
+        },
+        {
+          "$id": "interaction:hover",
+          "fontColor": {
+            "solid": {
+              "color": "#FFFFFF"
+            }
+          }
+        },
+        {
+          "$id": "interaction:press",
+          "fontColor": {
+            "solid": {
+              "color": "#FFFFFF"
+            }
+          }
+        }
+      ]
+    }
+  },
+  
+    "slicer": {
+      "*": {
+        "background": [
+          {
+            "color": {
+              "solid": {
+                "color": "#1B2838"
+              }
+            },
+            "transparency": 0
+          }
+        ],
+        "values": [
+          {
+            "fontColor": {
+              "solid": {
+                "color": "#FFFFFF"
+              }
+            }
+          }
+        ],
+        "header": [
+          {
+            "fontColor": {
+              "solid": {
+                "color": "#FFFFFF"
+              }
+            }
+          }
+        ],
+        "items": [
+          {
+            "fontColor": {
+              "solid": {
+                "color": "#FFFFFF"
+              }
+            }
+          }
+        ]
+      }
+    }
+  }
+}

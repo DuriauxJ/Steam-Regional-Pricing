@@ -7,14 +7,22 @@
 
 An automated, end-to-end data engineering and economic analysis pipeline evaluating how the digital video game distribution platform **Steam** applies regional pricing across global markets relative to underlying economic realities.
 
-This project evolves a university research essay (Grade: 6.0 / 6) into a reproducible data pipeline built with **KNIME**, **Python**, **R**, and visualized via interactive **PowerBI** and **Tableau** dashboards.
+This project evaluates pricing strategy across **four distinct pricing methodologies** for a standard 59.99 USD benchmark video game:
+1. **The Legacy Pricing (2022–2026):** Steam's long-standing regional pricing structure prior to recent updates.
+2. **FX-Based Pricing:** Models driven strictly by foreign exchange rates against the US Dollar.
+3. **PPP-Based Pricing:** Theoretical price adjustments anchored directly to Purchasing Power Parity.
+4. **Multivariable Pricing:** Recommendation system that combines multiple macroeconomic factors.
+
+Those methodologies are Steam's recommendation and video game editors are free to use their own methodology.
+
+This project evolves a university research essay (Grade: 6.0 / 6) into a reproducible data pipeline built with **KNIME**, **Python**, **R**, and visualized via interactive **PowerBI** and **Tableau** (in the future) dashboards.
 
 ---
 
 ## 📁 Repository Architecture
 <pre>
 📦 Steam-Regional-Pricing/\
-├── 📁 data/                            # Raw inputs & final master dataset (steam_regional_pricing_dataset.csv)
+├── 📁 data/                            # Raw inputs & final dataset (steam_regional_pricing_dataset.csv)
 ├── 📁 KNIME_steam_regional_pricing/    # KNIME workflow
 ├── 📁 python/                          # Python scripts embedded within KNIME nodes
 ├── 📁 dashboards/                      # PowerBI templates (.pbix) and Tableau workbook files
@@ -24,6 +32,8 @@ This project evolves a university research essay (Grade: 6.0 / 6) into a reprodu
 </pre>
 
 ## ⚙️ Data Engineering Pipeline (KNIME & Scripts)
+
+![KNIME Workflow](assets/KNIME_workflow.png)
 
 The pipeline is structured into 8 modular blocks inside KNIME, executing data ingestion, currency normalization, macroeconomic enrichment, and feature engineering automatically:
 
