@@ -8,14 +8,14 @@
 An automated, end-to-end data engineering and economic analysis pipeline evaluating how the digital video game distribution platform **Steam** applies regional pricing across global markets relative to underlying economic realities.
 
 This project evaluates pricing strategy across **four distinct pricing methodologies** for a standard 59.99 USD benchmark video game:
-1. **The Legacy Pricing (2022–2026):** Steam's long-standing regional pricing structure prior to recent updates.
-2. **FX-Based Pricing:** Models driven strictly by foreign exchange rates against the US Dollar.
-3. **PPP-Based Pricing:** Theoretical price adjustments anchored directly to Purchasing Power Parity.
-4. **Multivariable Pricing:** Recommendation system that combines multiple macroeconomic factors.
+- **The Legacy Pricing (2022–2026):** Steam's long-standing regional pricing structure prior to recent updates.
+- **FX-Based Pricing:** driven strictly by foreign exchange rates against the US Dollar.
+- **PPP-Based Pricing:** driven by the Purchasing Power Parity rate.
+- **Multivariable Pricing:** combines multiple macroeconomic factors.
 
-Those methodologies are Steam's recommendation and video game editors are free to use their own methodology.
+Those methodologies are Steam's recommendation, and video game editors are free to set their own regional prices.
 
-This project evolves a university research essay (Grade: 6.0 / 6) into a reproducible data pipeline built with **KNIME**, **Python**, **R**, and visualized via interactive **PowerBI** and **Tableau** (in the future) dashboards.
+This project evolves a university research essay (Grade: 6.0 / 6, found in the legacy folder) into a reproducible data pipeline built with **KNIME**, **Python**, **R**, and visualized via interactive **PowerBI** and **Tableau** (in the future) dashboards.
 
 ---
 
@@ -37,21 +37,46 @@ This project evolves a university research essay (Grade: 6.0 / 6) into a reprodu
 
 The pipeline is structured into 8 modular blocks inside KNIME, executing data ingestion, currency normalization, macroeconomic enrichment, and feature engineering automatically:
 
-- **Ingestion**: Imports raw country lists and Steam recommended prices via CSV readers and Python API wrappers.
+1. **Ingestion**: Imports raw country lists and Steam recommended prices via CSV readers and Python API wrappers.
 
-- **Filtering**: Gets population data from the World Bank API and filters out territories with a population under 350,000 , alongside Taiwan, Palestine, and North Korea due to incomplete World Bank reporting.
+2. **Filtering**: Gets population data from the World Bank API and filters out territories with a population under 350,000 alongside Taiwan, Palestine, and North Korea due to incomplete World Bank reporting.
 
-- **Joins**: Dynamically joins countries with individual and grouped regional prices.
+3. **Joins**: Dynamically joins countries with individual and grouped regional prices.
 
-- **Currency Conversions**: Computes 90-day trailing average exchange rates to resolve missing local orUSD price.
+4. **Currency Conversions**: Computes 90-day trailing average exchange rates to resolve missing local or USD price.
 
-- **Macroeconomic Enrichment**: Import World Bank (wbgapi) and IMF indicators.
+5. **Macroeconomic Enrichment**: Import World Bank (wbgapi) and IMF indicators.
 
-- **Depreciation**: Computes 12-month trailing local currency depreciation against the USD.
+6. **Depreciation**: Computes 12-month trailing local currency depreciation against the USD.
 
-- **Feature Engineering**: Calculates theoretical PPP baselines, price-to-income affordability ratios, and percentage misalignments from PPP.
+7. **Feature Engineering**: Calculates theoretical PPP prices, price-to-income affordability ratios, and percentage misalignments from PPP.
 
-- **Export**: Resorts, rename columns, and exports a CSV dataset.
+8. **Export**: Resorts, rename columns, and exports a CSV dataset.
+
+## Power BI Interactive Dashboard
+
+Due to custom R-script visual components (used for boxplots) and organization sharing permissions, static previews of the interactive Power BI report are showcased below across its three pages.
+
+### Page 1: Global Overview of Pricing Regimes
+Provides a macro-level overview of global market coverage, mapping the geographical and demographic distribution of Steam’s pricing regimes (Individual currencies vs. Regional Pricing Groups) alongside population-weighted dynamic average regional price and drill-down country tables.
+![Power BI Dashboard](assets/PowerBI_page1_1.png)
+![Power BI Dashboard](assets/PowerBI_page1_2.png)
+![Power BI Dashboard](assets/PowerBI_page1_3.png)
+
+### Page 2: Cross-Market Pricing & Economic Alignment Explorer
+Evaluates how alternative pricing structures behave relative to macroeconomic baselines (GNI per capita, net income, inflation, inequality). Features dynamic parameter switching between a single-chart deep dive and a 2x2 quad-chart matrix comparing all four pricing methods simultaneously, alongside ranked affordability rankings and price distribution histograms.
+![Power BI Dashboard](assets/PowerBI_page2_1.png)
+![Power BI Dashboard](assets/PowerBI_page2_2.png)
+![Power BI Dashboard](assets/PowerBI_page2_3.png)
+
+### Page 3: Regional Pricing Regimes & Intragroup Variance Explorer
+Investigates the economic efficiency of Uniform Regional Pricing Groups (LATAM, MENA, CIS, SASIA) compared against tailored Individual Currency Markets and the two base-price tiers. Utilizes custom R-scripted boxplots to analyze intra-group variance, median spreads, and outlier distributions across customizable economic and weighting dimensions.
+![Power BI Dashboard](assets/PowerBI_page3_1.png)
+![Power BI Dashboard](assets/PowerBI_page3_2.png)
+![Power BI Dashboard](assets/PowerBI_page3_3.png)
+
+## Tableau Narrative Dashboard
+Will present the insights from the interactive Power BI dashboard (WIP)
 
 ## steam_regional_pricing_dataset.csv 
 
